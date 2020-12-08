@@ -27,7 +27,7 @@ body{
 }
 
 .section-hero{
-    /* height: 650px; */
+    /* height: 700px; */
     background-image:url("/images/background.png");
     background-position: center;
     position: relative;
@@ -50,7 +50,7 @@ body{
 
 
 .section-hero-heading{
-    margin:10rem 0rem 1rem 0rem;
+    margin:8rem 0rem 1rem 0rem;
     text-align: center;
     padding-top: 3rem;
     font-size: 6.5rem;
@@ -77,15 +77,48 @@ body{
     margin: 1rem auto 2rem auto;
 } */
 
-.section-link{
+/* .section-link{
     margin: 1rem auto;
 }
 
 .link-image{
-    /* fill: white; */
     height: 2rem;
     width: 2rem;
+} */
+
+
+.stage{
+    margin: 1rem auto;
+    border-bottom: 1px;
+    display: flex;
+    height: 3rem;
+    width: 3rem;
 }
+
+.link-image{
+    height:2rem;
+    width: 2rem;
+    transform-origin: bottom;
+    margin: 0 auto;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    align-self: flex-end;
+}
+
+.bounce{
+    animation-name: bounce;
+    animation-timing-function: linear;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-0.75rem); }
+    100% { transform: translateY(0); }
+}
+
+
+
+
 
 
 .section-highlight{
