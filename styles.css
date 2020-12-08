@@ -27,7 +27,7 @@ body{
 }
 
 .section-hero{
-    height: 650px;
+    /* height: 650px; */
     background-image:url("/images/background.png");
     background-position: center;
     position: relative;
@@ -70,12 +70,23 @@ body{
     color: var(--bluegray400);
 }
 
-a{
+/* a{
     text-decoration:none ;
     color:var(--bluegray50);
     font-size: 1rem;
     margin: 1rem auto 2rem auto;
+} */
+
+.section-link{
+    margin: 1rem auto;
 }
+
+.link-image{
+    /* fill: white; */
+    height: 2rem;
+    width: 2rem;
+}
+
 
 .section-highlight{
     font-weight: bold;
@@ -84,7 +95,7 @@ a{
 }
 
 .section-space{
-    height: 50px;
+    height: 80px;
 }
 
 .body-container{
