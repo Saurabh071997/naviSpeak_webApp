@@ -181,7 +181,8 @@ button{
 }
 
 #txt-output{
-    background-color: var(--bluegray400);
+    /* background-color: var(--bluegray400); */
+    color:black;
     box-sizing: border-box;
     /* display: block; */
     width: 85%;

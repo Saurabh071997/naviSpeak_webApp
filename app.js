@@ -1,11 +1,10 @@
 var textInput = document.querySelector("#txt-input");
 var btnTranslate = document.querySelector("#btn-translate");
 var outputDiv = document.querySelector("#txt-output");
+var btnSpeak = document.querySelector("#btn-speak");
+var outputText="";
 
-// var serverUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
-var serverUrl = "https://api.funtranslations.com/translate/hodor.json";
-
-// var serverUrl = "https://api.funtranslations.com/translate/navi.json";
+var serverUrl = "https://api.funtranslations.com/translate/navi.json";
 
 function generateUrl(inputText){
     return serverUrl + "?" +  "text=" + inputText;
@@ -26,10 +25,38 @@ function clickHandler(){
     fetch(generateUrl(inputText))
     .then(response => response.json())
     .then(json => {
-        var outputText = json.contents.translated;
+        outputText = json.contents.translated;
         outputDiv.innerText = outputText;
     })
     .catch(errorHandler);
 }
 
+function txtToAudio(){
+
+
+    if ('speechSynthesis' in window) {
+        
+        var msg = outputText;
+        var speech = new SpeechSynthesisUtterance();
+        speech.lang = "en-US";
+        speech.text = msg;
+        speech.volume = 1;
+        speech.rate = 1;
+        speech.pitch = 2;
+        window.speechSynthesis.speak(speech);
+
+       }
+       else{
+        swal({
+            title: "Browser Error",
+            text: "This browser doesn't support Text-to_Audio ",
+            icon: "warning",
+            button: "OK",
+          });
+       }
+       
+                
+}
+
 btnTranslate.addEventListener("click", clickHandler);
+btnSpeak.addEventListener("click", txtToAudio);
