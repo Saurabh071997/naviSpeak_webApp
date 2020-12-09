@@ -32,10 +32,7 @@ function clickHandler(){
 }
 
 function txtToAudio(){
-
-
     if ('speechSynthesis' in window) {
-        
         var msg = outputText;
         var speech = new SpeechSynthesisUtterance();
         speech.lang = "en-US";
