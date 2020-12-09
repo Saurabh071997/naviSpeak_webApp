@@ -32,7 +32,7 @@ For the listening part of the application I used <span style="font-size:1.25rem"
 
 ## **Screenshots**<br> 
 
-![](/images/md_image1.png =100x)
+![](/images/md_image1.png )
 ![](/images/md_image2.png)
 <br><br>
 
