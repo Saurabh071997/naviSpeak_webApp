@@ -229,7 +229,7 @@ button{
     background-color: var(--bluegray900);
     margin:0%;
     padding: 1rem 0rem;
-    height: auto;
+    height: 15vh;
 }
 
 .footer-container{
