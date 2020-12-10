@@ -235,7 +235,7 @@ button{
     margin:0%;
     padding: 1rem 0rem;
     height: 10vh;
-    position: fixed;
+    position: sticky;
 }
 
 .footer-container{
