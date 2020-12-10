@@ -25,7 +25,7 @@ body{
     margin:0%;
     color: var(--bluegray100);
     padding: 0rem;
-    overscroll-behavior: contain;
+    overscroll-behavior: auto;
 }
 
 .section-hero{
@@ -229,7 +229,7 @@ button{
     background-color: var(--bluegray900);
     margin:0%;
     padding: 1rem 0rem;
-    height: auto;
+    height: 10vh;
 }
 
 .footer-container{
