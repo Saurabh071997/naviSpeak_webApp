@@ -25,7 +25,7 @@ body{
     margin:0%;
     color: var(--bluegray100);
     padding: 0rem;
-    overscroll-behavior: none;
+    overscroll-behavior: contain;
 }
 
 .section-hero{
