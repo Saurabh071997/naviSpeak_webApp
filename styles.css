@@ -24,8 +24,8 @@ body{
     font-family: 'Montserrat Alternates', sans-serif;
     margin:0%;
     color: var(--bluegray100);
-    /* scroll-behavior: smooth; */
     padding: 0rem;
+    overscroll-behavior: none;
 }
 
 .section-hero{
@@ -229,7 +229,7 @@ button{
     background-color: var(--bluegray900);
     margin:0%;
     padding: 1rem 0rem;
-    height: 15vh;
+    height: auto;
 }
 
 .footer-container{
